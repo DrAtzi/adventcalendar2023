@@ -1,0 +1,279 @@
+---
+title: "Advent Calendar Stata"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+Get in the Christmas mood by doing fun tasks in Stata!
+
+*Quellen der Fragen im Adventskalender:*
+
+
+## 1. Dezember
+
+```{r quiz}
+
+  question("On the first day of Christmas, Stata gave to me: A dataset full of Christmas tree heights to see. Using the dataset provided, estimate the mean height of the Christmas trees. Choose the correct answer from the options below.",
+    answer("a)	6.1 feet", correct = TRUE),
+    answer("b)	6.2 feet"),
+    answer("c)	5.8 feet"),
+    answer("d)	6.4 feet")
+  )
+
+```
+
+
+## 2. Dezember
+
+On the second day, joyfully, rename variables one, two, and three.
+
+The head elf is reviewing the toy production records to ensure everything is on track for Christmas. She notices that each elf has been increasingly productive each day. She decides to rename the variables to better reflect their extraordinary effort.
+
+Original Variable Names: *Toys_Made_Day1, Toys_Made_Day2, Toys_Made_Day3*. 
+
+Renaming Pattern: Each variable is to be renamed to *Effort_DayX_Star*, where *X* is the day number.
+
+## 3. Dezember
+
+```{r quiz3}
+
+  question("Day three unfolds, don't just advance,dive into summary stats, give them more than a glance. The dataset represents the weight of Santa's sleigh on different trips, filled with gifts of various kinds. Let's determine the maximum value.",
+    answer("a)	140 toys"),
+    answer("b)	150 toys"),
+    answer("c)	160 toys", correct = TRUE),
+    answer("d)	170 toys")
+    )
+
+```
+
+## 4. Dezember
+
+On day four, with cheer and glee, craft a graph, vibrant as a Christmas tree.
+
+Task: Using the dataset provided, create a bar graph displaying the weight of Santa's sleigh for each toy. Use different colors for each type of gift, making the graph as colorful and joyful as a Christmas tree.
+
+*Hint: Imagine a palette of festive colors - red for toys, green for books, blue for electronics, yellow for clothes, purple for games, and orange for sporting goods.*
+
+## 5. Dezember
+
+Fifth day's task, as easy as tea, identify and count missing values, one, two, and three. How many days have missing values for the number of visitors in the Winter Wonderland dataset?
+
+## 6. Dezember
+
+Day six is here, with merging glee, combine two datasets about Christmas candy.
+
+Dataset 1 - Candy Production: 
+This dataset represents the production quantity of various types of Christmas candies by a candy company.
+
+Dataset 2 - Candy Sales:
+This dataset shows the sales figures for these candies.
+
+Merge these two datasets based on *Candy_ID* and *Candy_Type*, and calculate the ratio of sales quantity to production quantity for each type of candy.
+
+## 7. Dezember
+
+On the seventh day, let it be, convert strings to uppercase, as easy as the ABC. Convert the *Carol_Title* variable from mixed case to uppercase in Stata.
+
+
+## 8. Dezember
+
+Eighth day's here, with a little decree, format dates to see when Christmas will be. Convert all the event dates to a standard format (YYYY-MM-DD). 
+
+
+## 9. Dezember
+
+```{r quiz9}
+
+  question("On day nine, sipping tea so fine, dive into logistic regression, where numbers align! Run a logistic regression to determine how the intensity of Rudolph's nose glow predicts his success in leading the sleigh. What is the odds ratio for Nose_Glow_Intensity in predicting Rudolph's success in leading the sleigh?",
+    answer("a)  0.08", correct = TRUE),
+    answer("b)  1.23"),
+    answer("c)  1.51"),
+    answer("d) -4.08")
+  )
+
+```
+
+## 10. Dezember
+
+Tenth day's task, simple as it can be, export data to Excel, quick as a bee.
+
+This dataset includes information on the production of different toys in Santa's workshop over a week. Export this dataset from Stata to an Excel file named *Santas_Workshop_Toy_Production.xlsx*.
+
+
+## 11. Dezember
+
+```{r quiz11}
+
+  question("Eleventh day, recode with glee, age groups of Christmas shoppers, one, two, three. Categorize the ages of Christmas shoppers into three age groups: 18-30, 31-45, and 46+. What are the correct percentages for each age group?",
+    answer("a) 18-30:20%, 31-45: 20%, and 46+:60%" ),
+    answer("b) 18-30: 12.5%, 31-45: 37.5%, and 46+: 50%"),
+    answer("c) 18-30:50%, 31-45:12.5%, and 46+: 37.5%"),
+    answer("d) 18-30: 37.5%, 31-45: 50%, and 46+: 12.5%", correct = TRUE)
+  )
+
+```
+## 12. Dezember
+
+
+Twelfth day calls for a loop, you see, automate a task, easy as it can be. The dataset includes the number of practice flights each of Santa's reindeer has completed. Use a loop in Stata to calculate the total number of practice flights completed by all reindeer.
+
+
+## 13. Dezember
+
+```{r quiz13}
+
+  question("Lucky day thirteen, as we can see, explore correlations in Santa's workshop glee! Analyze the dataset to find correlations between the number of toys made, hours worked, and hot chocolate cups consumed by the elves. Which pair of variables has the highest correlation?",
+    answer("a) Toys Made and Hours Worked."),
+    answer("b) Toys Made and Hot Chocolate Cups.", correct = TRUE),
+    answer("c) Hours Worked and Hot Chocolate Cups."),
+    answer("d) All pairs have similar correlations.", correct = TRUE)
+  )
+
+```
+
+## 14. Dezember
+
+```{r quiz14}
+
+  question("Fourteenth day, with glee, Run an ANOVA on Christmas cookie recipe.This dataset includes ratings given to different types of Christmas cookies based on a taste test. Use ANOVA to analyze if the average ratings significantly differ among the different types of cookies. What is the F-statistic value for the difference in average ratings among cookie types?",
+    answer("a) 2.89"),
+    answer("b) 1.29", correct = TRUE),
+    answer("c) 8.67"),
+    answer("d) 0.304")
+  )
+
+```
+
+## 15. Dezember
+
+```{r quiz15}
+
+  question("Fifteenth day, as merry as can be, create a macro, for repetitive glee. Use a macro to count how many children wish for each type of gift and determine the most requested gift type. According to the macro output, which gift type is the most requested?",
+    answer("a) Lego", correct = TRUE),
+    answer("b) Toy Car"),
+    answer("b) Doll"),
+    answer("b) Puzzle"),
+    answer("c) Teddy Bear.")
+  )
+
+```
+
+## 16. Dezember
+
+```{r quiz16}
+
+  question("Day sixteen, let's all agree, analyze time series of Christmas tree sales, see? This dataset includes the number of Christmas trees sold each year in a particular region. Based on a time series analysis, what is the average annual increase in tree sales?",
+    answer("a) 88 trees per year", correct = TRUE),
+    answer("b) 75 trees per year"),
+    answer("c) 125 trees per year"),
+    answer("d) 100 trees per year")
+  )
+
+```
+
+## 17. Dezember
+
+```{r quiz17}
+
+  question("Seventeenth day, with cheer and delight, tally reindeer for Santa's flight. We'll create a dataset centered around Santa's sleigh preparation and focus on organizing and summarizing the data. This dataset includes information about the weight of gifts loaded into Santa's sleigh from different regions and the number of reindeer required for each region. What is the total number of reindeer required for all regions?",
+    answer("a) 20 reindeer"),
+    answer("b) 30 reindeer"),
+    answer("c) 25 reindeer", correct = TRUE),
+    answer("d) 45 reindeer")
+
+  )
+
+```
+
+## 18. Dezember
+
+```{r quiz18}
+
+  question("Eighteenth day, under the Christmas tree, run a regression, simple as it can be. This enchanting dataset records the flight speeds of Santa's reindeer during test flights and their daily carrot consumption. What is the regression coefficient indicating how much flight speed increases per additional carrot consumed? ",
+    answer("a) 1 mile/hour per carrot"),
+    answer("b) 2 mile/hour per carrot", correct = TRUE),
+    answer("c) 3 mile/hour per carrot"),
+    answer("d) 4 mile/hour per carrot")
+  )
+
+```
+
+## 19. Dezember
+
+```{r quiz19}
+
+  question("Nineteenth day, with a cup of tea, create a scatter plot, easy as can be. Recall, this dataset records the flight speeds of Santa's reindeer and their daily carrot consumption. Create a scatterplot to visualize the relationship between each reindeer's flight speed and their daily carrot consumption. What pattern does the scatterplot reveal about the relationship between flight speed and carrot consumption?",
+    answer("a) Positive relationship", correct = TRUE),
+    answer("b) Negative relationship"),
+    answer("c) No relationship"),
+    answer("d) Outliers")
+  )
+
+```
+
+## 20. Dezember
+
+```{r quiz20}
+
+  question("Twentieth day, let's all agree, clean some data, carefully. This dataset records the production details of different toys in Santa's workshop, including the toy type and the number produced. However, some data entries are incorrect or inconsistent. Clean the dataset by correcting the negative and missing values and standardizing the Toy_Type entries. After cleaning the data, how many total Toy Trains were produced according to the dataset?",
+    answer("a) 210", correct = TRUE),
+    answer("b) 310"),
+    answer("c) 410"),
+    answer("d) 100")
+  )
+
+```
+
+
+## 21. Dezember
+
+```{r quiz21}
+
+  question("Twenty-first day, joyfully, draw a box plot, easy as ABC. This delightful dataset records the duration (in minutes) of flight training sessions for each of Santa's reindeer over a week. Create a box plot to visualize the distribution of flight training durations for each reindeer and identify the median training time. According to the box plot, what is the median training duration for reindeer Rudolph?",
+    answer("a) 40 minutes"),
+    answer("b) 45 minutes", correct = TRUE),
+    answer("c) 50 minutes"),
+    answer("d) 47 minutes")
+  )
+
+```
+
+## 22. Dezember
+
+```{r quiz22}
+
+  question("Twenty-second day, did you already got your Christmas tree? - perform a t-test, as quick as it can be. This dataset records the heights of two types of Christmas trees: Spruce and Fir trees. Perform an independent t-test to see if there's a significant difference in the average heights of Spruce and Fir Christmas trees. What is the p-value from the t-test comparing the average heights of Spruce and Fir trees?",
+    answer("a) 0.05"),
+    answer("b) 0.10"),
+    answer("c) 0.01", correct = TRUE),
+    answer("d) 0.20")
+  )
+
+```
+
+
+## 23. Dezember
+
+```{r quiz23}
+
+  question("Twenty-third day, under the Christmas tree, import data from CSV, easy as it can be. Import a dataset from a CSV file that includes information about the number of lights used in the North Pole's Christmas light show over several years. Once the data is imported, determine the year with the highest number of lights.",
+    answer("a) 2019", correct = TRUE),
+    answer("b) 2018"),
+    answer("c) 2016"),
+    answer("d) 2015")
+  )
+
+```
+
+## 24. Dezember
+
+Christmas Eve is here, with glee, reflect on all you've learned in Stata, merry as it can be.
+
+Merry Christmas!
+
